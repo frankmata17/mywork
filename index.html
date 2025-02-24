@@ -5,49 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Francisco Mata Portfolio</title>
     <link rel="stylesheet" href="styles/main.css">
-    <!-- Add meta tags for SEO, social media -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 </head>
 <body>
     <header>
-        <h1 id="name">Francisco Mata</h1>
-        <h2 id="title">Software Developer, Social Media Marketer</h2>
-        <nav class="topnav">
-            <h3 id="welcome">Welcome</h3>
-        </nav>
+        <div class="header-container">
+            <div class="profile-info">
+                <img src="images/DSC08365_Original.jpg" alt="Profile Image">
+                <div>
+                    <h1 id="name">Francisco Mata</h1>
+                    <h2 id="title">Software Developer | Social Media Marketer | Compliance</h2>
+                </div>
+            </div>
+            <nav class="topnav">
+                <!-- <h3 id="welcome">Welcome</h3> -->
+            </nav>
+            <div class="social-links">
+                <a href="https://github.com/frankmata17" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/frankmata17/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
     </header>
     
     <main>
-        <section>
+        <!-- <section>
             <h2>About Me</h2>
             <p class="intro">Hi, I'm Francisco, a Software Development student at Brigham Young University - Idaho. I'm based in Pleasant Grove, Utah, USA.</p>
             <p>I was born in Mexico and have lived most of my life in the US. My hobbies include watching movies, soccer (watching and playing), reading, hiking, and learning about new technologies.</p>
             <p>I have worked in various customer service positions and most recently have worked in compliance at doTERRA International. Throughout my career, I have had the opportunity to work as a leader and have enjoyed training and mentoring my teams.</p>
-        </section>
+        </section> -->
 
-        <section>
+        <section class="projects">
             <h2>Projects</h2>
-            <div class="project-container">
+            <div class="project-grid">
                 <div class="project-card">
-                <div class="project-details">
-                    <img src="images/logo.webp" alt="Project Image" class="project-image">
-                    <h3 class="scoots">Scoots | Motor Scooter Rental</h3>
-                    <p>A website for motor scooter and other recreational vehicle rentals in Cozumel, Mexico</p>
-                    <a href="https://frankmata17.github.io/wdd230/scoots/index.html" class="project-link" target="_blank">Visit Scoots</a>
-                </div>
-                </div>
-                <!-- <div class="project-card"></div>
+                    <img src="images/logo.webp" alt="Scoots Project" class="project-image">
                     <div class="project-details">
-                        <img src="" alt="Project Image" class="project-image">
-                        <h3 class="tictactoe">Check out my Tic Tac Toe project!</h3>
-                        <p>This is a simple and colorful Tic Tac Toe game that you can play online.</p>
-                        <a href="TicTacToe/index.html" class="project-link" target="_blank">Go to Tic-Tac-Toe</a>
+                        <h3>Scoots | Motor Scooter Rental</h3>
+                        <p>A website for motor scooter and recreational vehicle rentals in Cozumel, Mexico.</p>
+                        <a href="https://frankmata17.github.io/wdd230/scoots/index.html" class="project-link" target="_blank">Visit Scoots</a>
                     </div>
-                </div> -->
+                </div>
+                
+                <div class="project-card">
+                    <img src="images/tic-tac-toe.webp" alt="Tic Tac Toe Project" class="project-image">
+                    <div class="project-details">
+                        <h3>Tic Tac Toe Game</h3>
+                        <p>A simple and colorful Tic Tac Toe game that you can play online.</p>
+                        <a href="TicTacToe/index.html" class="project-link" target="_blank">Play Tic-Tac-Toe</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/san-diego1.jpg" alt="SD Chamber of Commerce" class="project-image">
+                    <div class="project-details">
+                        <h3>San Diego Chamber of Commerce page</h3>
+                        <p></p>
+                        <a href="https://frankmata17.github.io/wdd230/chamber/index.html" class="project-link" target="_blank">Visit Page</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/raft-hero.png" alt="Raft Hero" class="project-image">
+                    <div class="project-details">
+                        <h3>Raft Hero</h3>
+                        <p></p>
+                        <a href="https://frankmata17.github.io/WDD-130/wwr/index.html" class="project-link" target="_blank">Visit Page</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/chichia.png" alt="Chichia Photography" class="project-image">
+                    <div class="project-details">
+                        <h3>Chichia Photography</h3>
+                        <p></p>
+                        <a href="https://frankmata17.github.io/Chichia-Photography/" class="project-link" target="_blank">Visit Page</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <!-- Add footer if needed -->
-
+    <footer>
+        <p class="footer-year">&copy; <span id="year"></span> Francisco Mata</p>
+        <div class="social-links">
+            <a href="https://github.com/frankmata17" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/frankmata17/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </footer>
+    
+    <script>
+        // Set the current year dynamically
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
