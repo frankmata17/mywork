@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100..900&display=swap');
+    </style>
+    
+
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="profile-info">
+                <img src="images/DSC08365_Original.jpg" alt="Profile Image">
+            </div>
+    
+            <div class="name-title">
+                <h1 id="name">Francisco Mata</h1>
+                <h2 id="title">Software Developer | Social Media Marketer | Compliance</h2>
+            </div>
+    
+            <div class="social-links">
+                <a href="https://github.com/frankmata17" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/frankmata17/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    
+        <nav class="topnav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p class="intro">Hi, I'm Francisco, a Software Development student at Brigham Young University - Idaho. I'm based in Sandy, Utah, USA.</p>
+            <p>I was born in Mexico and have lived most of my life in the US. My hobbies include watching movies, soccer (watching and playing), reading, hiking, and learning about new technologies.</p>
+            <p>I have worked in various customer service positions and most recently have worked in compliance at doTERRA International. Throughout my career, I have had the opportunity to work as a leader and have enjoyed training and mentoring my teams.</p>
+        </section>
+        <section class="skills">
+            <h2>Skills & Technologies</h2>
+            <div class="skills-icons">
+                <div class="tooltip" data-tooltip="HTML">
+                    <i class="devicon-html5-plain colored"></i>
+                </div>
+                <div class="tooltip" data-tooltip="CSS">
+                    <i class="devicon-css3-plain colored"></i>
+                </div>
+                <div class="tooltip" data-tooltip="JavaScript">
+                    <i class="devicon-javascript-plain colored"></i>
+                </div>
+                <div class="tooltip" data-tooltip="Python">
+                    <i class="devicon-python-plain colored"></i>
+                </div>
+                <div class="tooltip" data-tooltip="Node.js">
+                    <i class="devicon-nodejs-plain colored"></i>
+                </div>
+                <div class="tooltip" data-tooltip="Git">
+                    <i class="devicon-git-plain colored"></i>
+                </div>
+                <div class="tooltip" data-tooltip="React">
+                    <i class="devicon-react-original colored"></i>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p class="footer-year">&copy; <span id="year"></span> Francisco Mata</p>
+        <div class="social-links">
+            <a href="https://github.com/frankmata17" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/frankmata17/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </footer>
+    
+    <script>
+        // Set the current year dynamically
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
